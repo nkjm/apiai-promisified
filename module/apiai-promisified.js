@@ -9,8 +9,8 @@ module.exports = class ApiaiPromisified {
         this.i = apiai(client_access_token, option);
     }
 
-    textRequest(sentence, session_id){
-        let req = this.i.textRequest(sentence, {sessionId: session_id});
+    textRequest(sentence, option){
+        let req = this.i.textRequest(sentence, option);
         return new Promise((resolve, reject) => {
             req.on("response", (response) => {
                 return resolve(response);
