@@ -1,3 +1,5 @@
+![Build Status](https://travis-ci.org/nkjm/apiai-promisified.svg?branch=master)
+
 # 概要
 
 api.aiのSDKをPromise対応させたパッケージ。
